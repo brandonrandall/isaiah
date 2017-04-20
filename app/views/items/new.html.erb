@@ -1,0 +1,19 @@
+<div class="new item form">
+<h1>Create An Item</h1>
+  <%= form_for @item do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+
+    <%= f.label :item_image %>
+    <%= f.text_field :item_image %>
+
+    <%= f.submit %>
+  <% end %>
+</div>

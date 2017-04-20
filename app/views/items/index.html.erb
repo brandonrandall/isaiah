@@ -1,0 +1,6 @@
+<% @items.each do |item| %><br>
+  <%= item.title %><br>
+  <%= item.description %><br>
+  price: <%= item.price %> <%= image_tag(item.item_image) %><br>
+<% end %>
+<%= link_to "Create New Item", new_item_path %>
